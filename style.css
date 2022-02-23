@@ -31,6 +31,10 @@ p {
     display: flex;
     justify-content: center;
 }
+.bot-btn {
+    display: flex;
+    justify-content: center;
+}
 h3 {
     display: flex;
     justify-content: center;
@@ -51,16 +55,29 @@ h3 {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    cursor: pointer;
+  }
+#src-btn {
+    background-color: #ffffff; /* Green */
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8rem;
+    cursor: pointer;
   }
 #p-btn{
-    background-color: #000000; /* Green */
+    background-color: #181818; /* Green */
     border: none;
     color: white;
     padding: 10px 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 0.8rem;
+    cursor: pointer;
 }
 select {
     font-size: 1em;
@@ -68,6 +85,7 @@ select {
     padding: 0.2em 5em 0.2em 1em;
     color: white;
     border: 0;
+    cursor: pointer;
 }
 .dropdown {
     display: flex;

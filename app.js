@@ -33,10 +33,6 @@ function code(length) {
     return result;
 }
 
-function hasNumber(myString) {
-    return /\d/.test(myString);
-}
-
 button.addEventListener('click', function () {
     pc.innerText = "";
     pc.append(code(length_a.value));
@@ -45,13 +41,23 @@ button.addEventListener('click', function () {
 function pauseplay() {
     if (video.paused) {
         video.play();
-        btn.innerHTML = "Pause";
+        btn.innerHTML = "Pause Background";
     } else {
         video.pause();
-        btn.innerHTML = "Play";
+        btn.innerHTML = "Play Background";
     }
 }
 
 btn.addEventListener('click', function () {
     pauseplay();
+})
+
+const srcbtn = document.getElementById('src-btn')
+
+function redirect() {
+    location.replace("https://github.com/rezuwii/PasscodeGenerator");
+}
+
+srcbtn.addEventListener('click', function () {
+    redirect();
 })

@@ -19,7 +19,7 @@
         <h1>PassCode Generator</h1>
         <p>(Create easy and strong passcode)</p>
         <br>
-        <p>Length of the passcode:</p>
+        <p><b>Length of the passcode:</b></p>
         <div class="dropdown">
             <select name="num" id="length">
                 <option value="1">1</option>
@@ -45,7 +45,7 @@
                 <option value="18">20</option>
             </select>
         </div>
-        <p>Choose one or more options:</p>
+        <p><b>Choose one or more options:</b></p>
         <div class="checkbx">
             <form action="">
                 <input type="checkbox" id="uc" name="uppercase" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ" checked>
@@ -65,10 +65,12 @@
             <!--<input type="text" placeholder="Enter passcode length" id="input-txt">-->
             <button id="gen-btn">Generate</button>
         </div>
-        <div class="pau">
-            <button id="p-btn">Pause</button>
-        </div>
         <h3 id="passcode"></h3>
+        <br>
+        <div class="bot-btn">
+            <button id="p-btn">Pause Background</button>
+            <button id="src-btn">Source Code</button>
+        </div>
     </div>
 </body>
 <script src="app.js"></script>
