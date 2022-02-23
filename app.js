@@ -5,6 +5,8 @@ const inputText = document.getElementById("input-txt");
 var video = document.getElementById("myVideo");
 var btn = document.getElementById("p-btn");
 
+//code
+
 function code(length) {
     var result = "";
     var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
