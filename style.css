@@ -62,3 +62,21 @@ h3 {
     display: inline-block;
     font-size: 16px;
 }
+select {
+    font-size: 1em;
+    background: rgb(36, 36, 36);
+    padding: 0.2em 5em 0.2em 1em;
+    color: white;
+    border: 0;
+}
+.dropdown {
+    display: flex;
+    justify-content: center;
+}
+.pau {
+    margin-bottom: 0;
+}
+.checkbx {
+    display: flex;
+    justify-content: center;
+}

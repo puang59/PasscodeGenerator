@@ -1,15 +1,31 @@
 const button = document.getElementById("gen-btn");
 const pc = document.getElementById("passcode");
-const inputText = document.getElementById("input-txt");
+const length_a = document.getElementById("length");
+
+// checkbox
+const uc = document.getElementById("uc");
+const lc = document.getElementById("lc");
+const n = document.getElementById("n");
+const c = document.getElementById("c");
+const s = document.getElementById("s");
+//const inputText = document.getElementById("input-txt");
 
 var video = document.getElementById("myVideo");
 var btn = document.getElementById("p-btn");
 
-//code
-
 function code(length) {
     var result = "";
-    var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    var characters = "";
+    if (uc.checked === true)
+        characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    if (lc.checked === true)
+        characters += "abcdefghijklmnopqrstuvwxyz";
+    if (n.checked === true)
+        characters += "1234567890";
+    if (c.checked === true)
+        characters += "{}[]()/\`~,;:.<>";
+    if (s.checked === true)
+        characters += "@#$%";
     var characterLength = characters.length;
     for (var i = 0; i < length; i++) {
         result += characters.charAt(Math.floor(Math.random() * characterLength));
@@ -23,10 +39,7 @@ function hasNumber(myString) {
 
 button.addEventListener('click', function () {
     pc.innerText = "";
-    if (hasNumber(inputText.value))
-        pc.append(code(inputText.value));
-    else
-        pc.append("My brain! I think its broken!");
+    pc.append(code(length_a.value));
 });
 
 function pauseplay() {

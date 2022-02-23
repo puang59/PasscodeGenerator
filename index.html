@@ -17,10 +17,55 @@
     </video>
     <div class="content">
         <h1>PassCode Generator</h1>
-        <p>(Enter the length of the passcode you want)</p>
+        <p>(Create easy and strong passcode)</p>
+        <br>
+        <p>Length of the passcode:</p>
+        <div class="dropdown">
+            <select name="num" id="length">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="18">19</option>
+                <option value="18">20</option>
+            </select>
+        </div>
+        <p>Choose one or more options:</p>
+        <div class="checkbx">
+            <form action="">
+                <input type="checkbox" id="uc" name="uppercase" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ" checked>
+                <label for="vehicle1"> Add ABCDEFGH</label><br>
+                <input type="checkbox" id="lc" name="lowercase" value="abcdefghijklmnopqrstuvwxyz">
+                <label for="vehicle1"> Add abcdefgh</label><br>
+                <input type="checkbox" id="n" name="number" value="1234567890">
+                <label for="vehicle1"> Add 123456</label><br>
+                <input type="checkbox" id="c" name="character" value="{}[]()/\`~,;:.<>">
+                <label for="vehicle1"> Add ( { } [ ] ( ) / \ ` ~ , ; : . <> )</label><br>
+                <input type="checkbox" id="s" name="symbol" value="@#$%">
+                <label for="vehicle1"> Add @#$%</label><br>
+            </form>
+        </div>
+        <br>
         <div class="gen">
-            <input type="text" placeholder="Enter passcode length" id="input-txt">
+            <!--<input type="text" placeholder="Enter passcode length" id="input-txt">-->
             <button id="gen-btn">Generate</button>
+        </div>
+        <div class="pau">
             <button id="p-btn">Pause</button>
         </div>
         <h3 id="passcode"></h3>
